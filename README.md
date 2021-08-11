@@ -25,6 +25,8 @@ The project aims to add Runtime pluggability to the Reva framework in order to i
 
 ## Work Summary
 
+Link to Project: https://github.com/cs3org/reva/projects/2
+
 1. [Go-Plugin Benchmarking](https://github.com/jimil749/reva-plugin-benchmark)
 
     - Performed Benchmarking for various go-plugin framework to analyse, compare and select the best plugin framework for our case.
@@ -35,3 +37,36 @@ The project aims to add Runtime pluggability to the Reva framework in order to i
         - [Traefik Yaegi](https://github.com/traefik/yaegi)
         - [Goloader](https://github.com/pkujhd/goloader)
     - Used the existing `JSON` plugin from `userprovider` service for Benchmarking purposes.
+
+2. [Plugin Package](https://github.com/cs3org/reva/pull/1861)
+
+    - Finalized the plugin framework after discussion with the mentors. Selected Framework: Hashicorp's [go-plugin](https://github.com/hashicorp/go-plugin) over RPC.
+    - Introduced Plugin package in the Reva codebase, which supports loading plugins at runtime.
+    - Ensured minimal changes in the configuration for backwards compatibility.
+    - Migrated the existing in-memory `JSON` driver from the `userprovider` service to runtime paradigm.
+    - Supported 3 ways of loading plugins:
+        - Load already compiled binary
+        - Compile the source code and load the binary
+        - Load plugins from in-memory registry
+
+3. [Enable fetching plugins from github](https://github.com/cs3org/reva/pull/1970)
+
+    - Added a new feature to download, compile and load plugins hosted on Github.
+
+4. [Documentation](https://github.com/cs3org/reva/pull/1971)
+
+    - Added basic developer manual/documention describing the Reva plugin architecture.
+    - Documentation serves as guide for the reva plugin developers.
+
+5. [Blog](https://gsoc-blog.netlify.app/)
+
+    - Maintained a blog describing my weekly work and my entire journey, check it out if you are more interested in my work! :)
+
+**Note: All of these PRs are not merged yet.**
+
+## Contact
+
+- [LinkedIn](https://www.linkedin.com/in/jimil-desai/)
+- [Github](https://github.com/jimil749)
+- [Portfolio](http://jimil-desai.s3-website.ap-south-1.amazonaws.com/)
+- [Email](jimildesai42@gmail.com)
