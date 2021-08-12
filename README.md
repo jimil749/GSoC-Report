@@ -26,7 +26,7 @@ The project aims to add Runtime pluggability to the Reva framework in order to i
 ## Work Summary
 
 Link to Project: https://github.com/cs3org/reva/projects/2
-
+    
 1. [Go-Plugin Benchmarking](https://github.com/jimil749/reva-plugin-benchmark)
 
     - Performed Benchmarking for various go-plugin framework to analyse, compare and select the best plugin framework for our case.
@@ -52,15 +52,43 @@ Link to Project: https://github.com/cs3org/reva/projects/2
 3. [Enable fetching plugins from github](https://github.com/cs3org/reva/pull/1970)
 
     - Added a new feature to download, compile and load plugins hosted on Github.
+    - User can specify multiple protocols to download the source code.
 
-4. [Documentation](https://github.com/cs3org/reva/pull/1971)
+4. [Methods to get and set context](https://github.com/cs3org/reva/pull/1938)
+
+    - Created methods, `GetContextKV` to extract context values from context and `PutContextKV` to put context values into context type.
+
+5. [Migrated User/Token context methods into Separate package](https://github.com/cs3org/reva/pull/1982)
+
+    - Refractored the code base by separating the user and token context methods into a separate package.
+    - Used to "Get" and "Set" user and token context.
+    - Used by RPC packages to send context data over RPC to plugins.
+
+6. [Documentation](https://github.com/cs3org/reva/pull/1971)
 
     - Added basic developer manual/documention describing the Reva plugin architecture.
     - Documentation serves as guide for the reva plugin developers.
 
-5. [Blog](https://gsoc-blog.netlify.app/)
+7. [Blog](https://gsoc-blog.netlify.app/)
 
     - Maintained a blog describing my weekly work and my entire journey, check it out if you are more interested in my work! :)
+
+### Pre-GSoC
+
+1. [Make commands to run litmus-tests](https://github.com/cs3org/reva/pull/1543)
+
+    - My first contribution to Reva project.
+    - Added `Make` command to run litmus tests which provided an easy way to run litmus tests.
+
+2. [OCM Invitation Workflow Commands](https://github.com/cs3org/reva/pull/1558)
+
+    - Added CLI commands:
+        - `ocm-invite-generate`: to generate an invitation token
+        - `ocm-invite-forward`:  to forward the invitation token to the mesh provider
+
+3. [Modularized API Token Management](https://github.com/cs3org/reva/pull/1574)
+
+    - Refractored the GRAPPA Driver code to remove code duplication.
 
 **Note: All of these PRs are not merged yet.**
 
