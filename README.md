@@ -26,7 +26,20 @@ The project aims to add Runtime pluggability to the Reva framework in order to i
 ## Work Summary
 
 Link to Project: https://github.com/cs3org/reva/projects/2
+
+### Issues and Discussion
+
+1. [Design and Integration](https://github.com/cs3org/reva/issues/1814)
     
+    - Detailed discussions on design and integration of runtime plugins into Reva.
+    - Plugin package: Finalized plugin architecture.
+
+2. [Fetching Plugins from github repo](https://github.com/cs3org/reva/issues/1961)
+    
+    - Detailed discussion on "how to enable Reva to fetch plugins from github repostiry".
+
+### Pull Requests
+
 1. [Go-Plugin Benchmarking](https://github.com/jimil749/reva-plugin-benchmark)
 
     - Performed Benchmarking for various go-plugin framework to analyse, compare and select the best plugin framework for our case.
